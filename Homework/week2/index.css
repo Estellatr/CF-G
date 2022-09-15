@@ -42,6 +42,7 @@ hr {
   text-align: center;
   padding: 0px;
   position: relative;
+  line-height: 20px;
 }
 
 .bigbutton {
