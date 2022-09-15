@@ -17,6 +17,11 @@ hr {
   float: left;
 }
 
+.introvid iframe {
+    width: 90%;
+    max-height: max-content;
+}
+
 
 .sidenavhead p {
     font-size: small;
