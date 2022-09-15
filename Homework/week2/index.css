@@ -1,6 +1,7 @@
 body {
   background-image: url(images/confettibackground.jpg);
   font-family: Rubik;
+  padding-right: 10%;
 }
 
 hr {
@@ -14,6 +15,11 @@ hr {
   margin: 1vh;
   border: 10px hidden;
   float: left;
+}
+
+.introvid iframe {
+    width: 100px;
+    height: auto;
 }
 
 .sidenavhead p {
