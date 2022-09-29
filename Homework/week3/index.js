@@ -1,10 +1,3 @@
-/*document.getElementById('nextbutton').addEventListener("click", (event) => {
-  let answer = prompt("Ahh");
-  let story = document.getElementById("output");
-  story.value += "\n" + answer;
-});*/
-
-
 document.getElementById('startbutton').addEventListener("click", (event) => { 
   alert(
     "Welcome to Rescue the Frog! Follow the prompts to rescue our little froggie friend :)."
@@ -141,38 +134,6 @@ document.getElementById('startbutton').addEventListener("click", (event) => {
         output.value += "You take your last breath and dream sweet dreams of froggie heaven - dancing with little frogs forever.";
         output.value += "The End." + "\n" + "Thank you for playing!";
         invalidAnswer = false;
-  
-        /*while (invalidAnswer) {
-          alert("You enter the dilapidated cottage. It shakes with every step you take.");
-          alert("You see a large ladder in the center of the cottage - perfect for reaching the bottom of the well!");
-          alert("Unfortunately, as you lift the ladder, the house groans and collapses in on you." + "\n" + "Who would have known the ladder was the only thing holding this little cottage together?!");
-          alert("You take your last breath and dream sweet dreams of froggie heaven - dancing with little frogs forever.");
-          output.value += "You enter the dilapidated cottage. It shakes with every step you take.";
-          output.value += "You see a large ladder in the center of the cottage - perfect for reaching the bottom of the well!";
-          output.value += "Unfortunately, as you lift the ladder, the house groans and collapses in on you." + "\n" + "Who would have known the ladder was the only thing holding this little cottage together?!";
-          output.value += "You take your last breath and dream sweet dreams of froggie heaven - dancing with little frogs forever.";
-          let question = "You are walking by a small road, when you hear little ribbit-y cries for help. What do you do? Investigate, or keep walking?"
-          answer = prompt(question);
-          
-          output.value +=
-            "Q: " + question;
-          
-          if (answer.toLowerCase() == "investigate") {
-            output.value += "\n" + answer;
-            invalidAnswer = false;
-          } else if (answer.toLowerCase() == "keep walking") {
-            output.value +=
-              "\n" +
-              "A:" + answer +
-              "\n" +
-              "You keep walking and have a normal, uneventful day." +
-              "\n" +
-              "The End";
-              invalidAnswer = false;
-          } else {
-            alert("You must enter a valid answer.");
-          }
-        }*/
   
     } else {
       alert("You must enter a valid answer.");
