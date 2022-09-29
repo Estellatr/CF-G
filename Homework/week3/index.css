@@ -1,0 +1,48 @@
+.body {
+    background-image: url(images/frogwallpaper.jpg);
+    text-align: center;
+}
+
+.opening h1 {
+    font-family: 'Bungee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    font-display: swap;
+    color: #bcff70;
+    text-shadow: 7px 5px black;
+    text-align: center;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: min-content;
+}
+
+.opening h2 {
+    font-family: 'Cute Font';
+    font-size: 70px;
+    color: #f7c592;
+    /*color: #fcbbcc;*/
+    text-shadow: 6px 4px black;
+    text-align: center;
+    margin: 0px;
+}
+
+#startbutton {
+    background-color: #f7c592;
+    width: 10vw;
+    height: 6vh;
+    font-family: 'Cute Font';
+    font-size: 40px;
+    font-weight: bold
+}
+
+#output {
+    background-color: #fce1eb;
+    width: 30vw;
+    height: 30vh;
+    overflow: scroll;
+    margin-top: 60px;
+    outline: 2px solid black; ​
+}
