@@ -1,0 +1,46 @@
+#body {
+    margin: 15% 25% 0% 25%;
+    width: 50%;
+    background-image: url(images/clouds.jpg);
+}
+
+.calcstyle {
+    text-align: center;
+    margin: 0px;
+    display: block;
+    background-color: #fab1d6;
+    width: 100%;
+    border: 4px solid white;
+}
+
+#output {
+ height: 10vh;
+ width: 96%;
+ background-color: #a487c7;
+ border: 2% solid #fab1d6;
+ overflow: visible;
+ margin: 10px 0px 0px 0px;
+} 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.4fr 0.4fr;
+    grid-template-rows: 40px 40px 40px 40px;
+    border: 5px solid #fab1d6;
+    row-gap: 10px;
+    column-gap: 10px;
+    background-color: #fab1d6;
+}
+
+.grid-item {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    color: #a487c7;
+    background-color: white;
+    border: 1px solid #a18fb5;
+}
+
+.grid-item:hover {
+    background-color: #ffdeea;
+}
