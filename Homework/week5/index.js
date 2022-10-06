@@ -4,7 +4,7 @@ let operator = "";
 let operand = "";
 output.value = value + operator + operand;
 let first = true;
-console.log("asd");
+let calculated = false;
 
 document.getElementById("+button").addEventListener("click", (event) => {
   first = false;
@@ -33,11 +33,23 @@ document.getElementById("^button").addEventListener("click", (event) => {
   output.value = value + operator + operand;
 });
 
+
 document.getElementById("sqrtbutton").addEventListener("click", (event) => {
-    first = false;
-    operator = "sqrt";
-    output.value = value + operator + operand;
-  });
+  first = true;
+  calculated = true;
+  value = Math.sqrt(parseFloat(value));
+  operator = "";
+  output.value = value + operator + operand;
+});
+
+document.getElementById("cbutton").addEventListener("click", (event) => {
+  first = true;
+  calculated = true;
+  operator = "";
+  operand = "";
+  value = 0;
+  output.value = value + operator + operand;
+});
 
 document.getElementById("=button").addEventListener("click", (event) => {
   if (operator == "+") {
@@ -50,10 +62,9 @@ document.getElementById("=button").addEventListener("click", (event) => {
     value /= parseFloat(operand);
   } else if (operator == "^") {
     value = value ** parseFloat(operand);
-  } else if (operator == "sqrt") {
-    value = math.sqrt(value);
   }
-
+  calculated = true;
+  first = true;
 
   operand = "";
   operator = "";
@@ -100,10 +111,24 @@ document.getElementById("9button").addEventListener("click", (event) => {
   Operand("9");
 });
 
+document.getElementById(".button").addEventListener("click", (event) => {
+  Operand (".");
+});
+
+
+
 function Operand(operandLocal) {
   console.log("Test");
   if (first) {
-    value = parseFloat(value.toString() + operandLocal);
+    if (calculated) {
+      value = parseFloat(operandLocal);
+      calculated = false;
+    } else {
+      value = parseFloat(value.toString() + operandLocal);
+      if (operandLocal == ".") {
+        value += ".";
+      }
+    }
   } else {
     operand += operandLocal;
   }
